@@ -7,6 +7,7 @@ public class JsonObject extends Json {
     private ArrayList<JsonPair> pairs;
     //private JsonPair[] jsonPairs;
     public JsonObject(JsonPair... jsonPairs) {
+        this.pairs = new ArrayList<>();
         for (int i = 0; i < jsonPairs.length; i++) {
             pairs.add(jsonPairs[i]);
         }
